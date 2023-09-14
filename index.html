@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Assignment home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">unbundl assignment</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end align-center"
+          id="main-nav"
+        >
+          <ul class="nav d-flex justify-content-evenly">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div
+      id="carouselExampleInterval"
+      class="carousel slide image-size"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img
+            src="data/banner/slide1.jpg"
+            class="d-block w-100"
+            alt="banner image 1"
+          />
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img
+            src="data/banner/slide2.jpg"
+            class="d-block w-100"
+            alt="banner image 2"
+          />
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img
+            src="data/banner/slide3.jpg"
+            class="d-block w-100"
+            alt="banner image 3"
+          />
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img
+            src="data/banner/slide4.jpg"
+            class="d-block w-100"
+            alt="banner image 4"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- info -->
+    <div>
+      <div class="card text-center m-5">
+        <div class="card-header">Assignment</div>
+        <div class="card-body">
+          <h5 class="card-title">Feature Added</h5>
+          <p class="card-text">
+            Assignment 1: Created Carousel of four photos with auto slide option
+            with the delay of 3 seconds
+          </p>
+          <p class="card-text">
+            Assignment 2: Created bundle feature to build custom pack of 8 items
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Banner -->
+    <div class="google-font2 d-flex justify-content-center">
+      <p class="fs-1">Make your bundle</p>
+    </div>
+
+    <!-- Cards -->
+    <div class="container py-4">
+      <div class="chocolates row">
+        <div class="col-lg col-6 my-2">
+          <div class="card chocolate">
+            <img
+              src="data/product/product_img1.jpg"
+              class="card-img-top"
+              alt="Dark chocolate"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Dark chocolate alpha</h5>
+              <div class="d-flex justify-content-between">
+                <span class="my-1">₹199</span>
+                <button
+                  class="btn btn-secondary btn-sm"
+                  onclick="addToCart('Dark alpha', 199)"
+                >
+                  Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg col-6 my-2">
+          <div class="card chocolate">
+            <img
+              src="data/product/product_img2.jpg"
+              class="card-img-top"
+              alt="White chocolate"
+            />
+            <div class="card-body">
+              <h5 class="card-title">White chocolate alpha</h5>
+
+              <div class="d-flex justify-content-between">
+                <span class="my-1">₹299</span>
+                <button
+                  class="btn btn-secondary btn-sm"
+                  onclick="addToCart('Dark alpha', 299)"
+                >
+                  Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg col-6 my-2">
+          <div class="card chocolate">
+            <img
+              src="data/product/product_img3.jpg"
+              class="card-img-top"
+              alt="Dark chocolate"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Dark chocolate beta</h5>
+              <div class="d-flex justify-content-between">
+                <span class="my-1">₹180</span>
+                <button
+                  class="btn btn-secondary btn-sm"
+                  onclick="addToCart('Dark alpha', 180)"
+                >
+                  Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg col-6 my-2">
+          <div class="card chocolate">
+            <img
+              src="data/product/product_img4.jpg"
+              class="card-img-top"
+              alt="White chocolate"
+            />
+            <div class="card-body">
+              <h5 class="card-title">White chocolate beta</h5>
+              <div class="d-flex justify-content-between">
+                <span class="my-1">₹250</span>
+                <button
+                  class="btn btn-secondary btn-sm"
+                  onclick="addToCart('Dark alpha', 250)"
+                >
+                  Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bundle -->
+    <div class="segment-odd">
+      <div class="container-fluid my-3">
+        <div class="flex">
+          <h2>Your Bundle</h2>
+        </div>
+        <div id="cart-list" class="item-list">
+          <!-- Cart items will be added here -->
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-body-tertiary py-4">
+      <div class="container-fluid cart d-flex justify-content-between">
+        <p>Total Price: ₹<span id="total-price">0.00</span></p>
+        <p>Cart Items: <span id="product-count">0</span></p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="index.js"></script>
+  </body>
+</html>
